@@ -18,6 +18,22 @@
     <properties>
 
         <demo.version>1.0.0-SNAPSHOT</demo.version>
+        <java.version>1.8</java.version>
+        <resource.delimiter>@</resource.delimiter>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+
+        <spring.boot.version>2.0.0.RELEASE</spring.boot.version>
+        <spring.cloud.version>Finchley.M7</spring.cloud.version>
+
+        <!-- 第三方依赖版本 -->
+        <pagehelper.boot.version>1.2.3</pagehelper.boot.version>
+        <mysql.driver.version>5.1.30</mysql.driver.version>
+        <druid.version>1.1.5</druid.version>
+        <elasticjob.version>2.1.5</elasticjob.version>
+        <curator.version>2.12.0</curator.version>
     </properties>
 
 
