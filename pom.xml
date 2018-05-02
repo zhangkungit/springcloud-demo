@@ -34,12 +34,48 @@
         <druid.version>1.1.5</druid.version>
         <elasticjob.version>2.1.5</elasticjob.version>
         <curator.version>2.12.0</curator.version>
+
+        <cms.version>1.0.0-SNAPSHOT</cms.version>
+        <platform.support.version>1.0-SNAPSHOT</platform.support.version>
+        <platform.user.version>1.0-SNAPSHOT</platform.user.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <fastjson.version>1.2.29</fastjson.version>
+        <org.json.version>20151123</org.json.version>
+        <guava.version>18.0</guava.version>
     </properties>
 
 
     <modules>
         <module>demo-product</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <dependency>
+                <groupId>org.json</groupId>
+                <artifactId>json</artifactId>
+                <version>${org.json.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-collections</groupId>
+                <artifactId>commons-collections</artifactId>
+                <version>${commons.collections.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
 </project>
